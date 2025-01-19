@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4905/4905624.png" type="image/x-icon">
+    <!-- icone dos botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cronômetro</title>
 </head>
 <body>
-    
+    <div id="stopwatch">
+        <h2 id="timer">
+            00:00:00:000
+        </h2>
+        <div id="actions">
+            <button id="reset">
+                <i class="fa-solid fa-redo"></i> 
+            </button>
+            <button id="power" action="start">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="mark">
+                <i class="fa-solid fa-flag"></i>
+            </button>
+        </div>
+        <div id="marks-list"></div>
+    </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
